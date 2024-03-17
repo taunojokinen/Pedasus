@@ -6,7 +6,10 @@ export default function Header() {
     <header>
         <h1>
           Pedasus Software 
-        </h1>  
+        </h1>
+        <images>
+        <img src="./images/pedasus_logo_iso_2.gif" alt="Pedasus Software" />  
+        </images>  
     </header>
   )
 }

@@ -1,0 +1,53 @@
+content {
+    background-color: var(--light-color);
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    align-items: top;   
+}
+
+content h1 {
+    color: var(--dark-color);
+    font-size: 4vh;
+    display: block;
+    padding-left: var(--gutter);
+    padding: right 0;
+    justify-content: top;
+    align-items: center;
+    line-height: 1.3;
+    padding-top: 2vh;
+}
+
+content img {
+    height: 45vh;
+    padding-left: 6vw;
+    padding-top: 2vh;
+    
+}
+
+content p {
+    display: block;
+    padding-left: 6vw;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.3;
+    padding-top: 2vh;
+}
+
+article {
+    width: 25%;
+    justify-content: space-around;
+}
+
+#justify p {
+    text-align: justify;
+    padding-left: var(--gutter);;
+}
+
+#about {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vh;
+    padding-top: 10vh;
+}

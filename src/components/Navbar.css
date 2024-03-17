@@ -2,22 +2,27 @@ nav {
     background-color: var(--grey-color);
     display: flex;
     justify-content: left;
-    align-items: center;
-    height: 50px;
+    height: 5vh;
+
+
 }
 
 nav ul {
     list-style-type: none;
+
 }
 
 nav ul li {
     display: inline-block;
+     
 }
 
 nav a {
     display: inline-block;
-    padding: 0.5em var(--gutter);
+    padding-top: 2.5vh;
+    padding-left: var(--gutter);
     text-decoration: none;
+    font-size: 2vh;
 }
 
 nav a:hover {

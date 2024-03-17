@@ -3,7 +3,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
+    height: 10vh;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -11,4 +11,9 @@ footer {
 
 footer p {
     color: var(--light-color)
+}
+
+footer img {
+    display: inline-block;
+    height: 7vh;
 }

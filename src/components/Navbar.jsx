@@ -1,20 +1,18 @@
 import './Navbar.css'
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <nav>
+      <nav>
         <ul>
             <li>
-                <a>Home</a>
+              <Link to="/">Home</Link>{' '}
             </li>
             <li>
-                <a>About</a>
+              <Link to="/about">About</Link>{' '}
             </li>
-
         </ul>
-
-    </nav>
-
+     </nav>
   )
 }
