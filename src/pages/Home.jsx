@@ -20,28 +20,32 @@ export default function home() {
               </div>
               <div>
                 <p>Ota yhteyttä meihin jo tänään, niin autamme sinua saavuttamaan liiketoimintatavoitteesi tehokkaasti ja luotettavasti. 
-                  Pedasus Software - Luotettava kumppanisi ohjelmistokehityksessä. </p>
+                 </p>
               </div>
         </div>
       </article>
       <article>
         <div>
-            <img src="./images/mirja.jpg" alt="Pedasus Software" />  
-          <p>
-            Mirja Pirinen, Senior Partner <br />
-            040 - 7021062<br />
-            mirja.pirinen@hotmail.com
-          </p>    
+            <img src="./images/mirja.jpg" alt="Pedasus Software" class= "center" />
+            <div  id='kuva'> 
+              <p>
+                Mirja Pirinen, Senior Partner <br />
+                040 - 7021062<br />
+                mirja.pirinen@hotmail.com
+              </p> 
+            </div>    
         </div>
       </article>
       <article>
         <div>
-            <img src="./images/tauno.jpg" alt="Pedasus Software" />  
-          <p>
-            Tauno Jokinen, Senior Partner <br />
-            050 - 4087097<br />
-            tauno.jokinen@gmail.com
-          </p>    
+            <img src="./images/tauno.jpg" alt="Pedasus Software" class= "center" />  
+            <div id='kuva'>
+              <p>
+                Tauno Jokinen, Senior Partner <br />
+                050 - 4087097<br />
+                tauno.jokinen@gmail.com
+              </p>
+            </div>    
         </div>
       </article>
     </content>

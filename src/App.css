@@ -8,9 +8,10 @@ content {
 
 content h1 {
     color: var(--dark-color);
-    font-size: 4vh;
+    font-size: 3vh;
     display: block;
     padding-left: var(--gutter);
+    padding-right: var(--gutter);
     padding: right 0;
     justify-content: top;
     align-items: center;
@@ -19,15 +20,25 @@ content h1 {
 }
 
 content img {
-    height: 45vh;
-    padding-left: 2vw;
+    width: 35vh;
+    align-items: center;
+    padding-left: 0vw;
     padding-top: 2vh;
-
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
 
 content p {
     display: block;
-    padding-left: 2vw;
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
     justify-content: center;
     align-items: center;
     line-height: 1.3;
@@ -44,6 +55,18 @@ article {
     padding-left: var(--gutter);
     padding-right: calc(2*var(--gutter));
 }
+#kuva p {
+    text-align: center;
+    padding-left: var(--gutter);
+    padding-right: calc(2*var(--gutter));
+}
+
+#justify {
+    text-align: justify;
+    width: 100%;
+    padding-left: var(--gutter);
+    padding-right: calc(2*var(--gutter));
+}
 
 #about {
     display: inline-block;
@@ -52,3 +75,112 @@ article {
     font-size: 6vh;
     padding-top: 10vh;
 }
+
+
+
+@media only screen and (max-aspect-ratio: 12/7) {
+
+    article {
+        width: 30%;
+        justify-content: space-around;
+    }
+    content h1{
+    font-size: 3vh;
+    }
+
+    #justify {
+        text-align: justify;
+        width: 110%;
+        padding-left: var(--gutter);
+        padding-right: calc(2*var(--gutter));
+    }
+
+}
+
+@media only screen and (max-aspect-ratio: 10/7) {
+
+    
+    article {
+        width: 80%;
+        justify-content: space-around;
+    }
+
+
+    content h1{
+    font-size: 2vh;
+    }
+
+    #justify {
+        
+        text-align: justify;
+        width: 110%;
+        padding-left: var(--gutter);
+        padding-right: calc(2*var(--gutter));
+    }
+
+    #justify p {
+
+        font-size: 1.6vw;
+    }
+}
+
+    @media only screen and (max-aspect-ratio: 1) {
+
+        content {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 10vh;
+            height: auto;
+        };
+
+        article {
+            width: 90vw;
+            align-items: center;
+            justify-content: center;
+        }
+        content h1{
+        color: var(--dark-color);
+        font-size: 4vh;
+        }
+
+        content p {
+            display: block;
+            padding-left: 2vw;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.3;
+            padding-top: 2vh;
+        }
+    
+        #justify {
+            
+            text-align: justify;
+            padding-left: 0 px;
+        }
+    
+        #justify p {
+    
+            font-size: 4vw;
+
+        }
+
+        #kuva p {
+            text-align: center;
+            font-size: 4vw;
+            color: var(--dark-color);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+      content img {
+            display: block;
+            height: auto;
+            width: 60vw;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 3vw;
+            padding-top: 6vh;
+        }
+
+
+    }
