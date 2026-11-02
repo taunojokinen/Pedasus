@@ -11,7 +11,6 @@
   padding: 0;
   color: var(--dark-color);
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 0px;
 }
 *, *::before, *::after {
   box-sizing: border-box;
@@ -19,4 +18,11 @@
 
 p {
   font-size: 2vh;
+}
+
+/* Footer seuraa sisältöä, mutta pysyy alareunassa lyhyilläkin sivuilla */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

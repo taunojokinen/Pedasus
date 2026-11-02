@@ -1,13 +1,17 @@
-import React from 'react'
+import { useEffect } from 'react'
 import '../App.css'
 
 
-export default function home() {
+export default function Home() {
+  useEffect(() => {
+    document.title = 'Pedasus Software – Etusivu'
+  }, [])
+
   return (
-    <content>
+    <main>
         <article>
-          <div id='justify'>
-            <h1>Tervetuloa kotisivullemme! </h1>
+          <div className='justify'>
+            <h2>Tervetuloa kotisivullemme! </h2>
               <div >
                 <p>Tarjoamme asiakkaillemme laadukkaita ja innovatiivisia ohjelmistoratkaisuja. 
                   Pedasus Softwaren asiantunteva tiimi on erikoistunut kehittämään räätälöityjä ohjelmistoja, jotka vastaavat asiakkaidemme 
@@ -26,8 +30,8 @@ export default function home() {
       </article>
       <article>
         <div>
-            <img src="./images/mirja.jpg" alt="Pedasus Software" class= "center" />
-            <div  id='kuva'> 
+            <img src="/images/mirja.jpg" alt="Mirja Pirinen" className="center" />
+            <div className='kuva'>
               <p>
                 Mirja Pirinen, Senior Partner <br />
                 040 - 7021062<br />
@@ -38,8 +42,8 @@ export default function home() {
       </article>
       <article>
         <div>
-            <img src="./images/tauno.jpg" alt="Pedasus Software" class= "center" />  
-            <div id='kuva'>
+            <img src="/images/tauno.jpg" alt="Tauno Jokinen" className="center" />
+            <div className='kuva'>
               <p>
                 Tauno Jokinen, Senior Partner <br />
                 050 - 4087097<br />
@@ -48,6 +52,6 @@ export default function home() {
             </div>    
         </div>
       </article>
-    </content>
+    </main>
   )
 }
